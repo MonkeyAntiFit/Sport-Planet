@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport Planet</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href = "./css/style2.css">
+    <style>
+        .navbar-brand {
+            margin-right: 2rem;
+        }
+
+        .nav-link {
+            color: white !important;
+        }
+
+        .nav-item {
+            margin-right: 1rem;
+        }
+
+        .search-container {
+            margin-left: auto;
+        }
+
+        .login-btn {
+            margin-left: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html" target="_self">Sport Planet</a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="./skate.html">Skate</a>
+                            </li>
+                        </ul>
+                        <li class="nav-item dropdown">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                  <a class="nav-link active" aria-current="page" href="./roller.html">Rollers</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                  <a class="nav-link active" aria-current="page" href="./surf.html">Surf</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="accesoriosDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" data-bs-toggle="popover"
+                                title="Elige tu categoría"
+                                data-bs-content="Encuentra una amplia gama de accesorios para skate, surf y rollers.">Accesorios</a>
+                            <ul class="dropdown-menu" aria-labelledby="accesoriosDropdown">
+                                <li><a class="dropdown-item" href="./accesorioskate.html" target="_self">SKATE 🛹</a></li>
+                                <li><a class="dropdown-item" href="./accesoriosurf.html" target="_self">SURF 🏄</a></li>
+                                <li><a class="dropdown-item" href="./accesorioroller.html" target="_self">PATINES 🛼</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="search-container">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        </form>
+                    </div>
+                    <div class="login-btn">
+                        <a type="button" class="btn btn-success " href="./loginNuevo.html">Login</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Modal de inicio de sesión -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Usuario:</label>
+                            <input type="text" class="form-control" id="username">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Contraseña:</label>
+                            <input type="password" class="form-control" id="password">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container mt-4">
+        <h2>Accesorios Skate</h2>
+        <div class="row">
+            <div class="col-md-4 accesorios">
+                <div class="card">
+                    <button class="img-button" data-bs-toggle="modal" data-bs-target="#accesorios4">
+                        <img src="./assets/img/Accesorios/accesorio_4.jpg" class="card-img-top img-thumbnail" alt="...">
+                    </button>
+                    <div class="card-body">
+                        <h5 class="card-title">accesorios</h5>
+                        <p class="card-text">Tabla de skate resistente, ideal para trucos y deslizamientos. Diseño ergonómico para un mejor control y diversión en las pistas..</p>
+                        <p class="card-text"><small class="text-body-secondary">Última actualización hace 3 minutos</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 accesorios-container">
+                <div class="card">
+                    <button class="img-button" data-bs-toggle="modal" data-bs-target="#accesorios5">
+                        <img src="./assets/img/Accesorios/accesorio_5.webp" class="card-img-top img-thumbnail" alt="...">
+                    </button>
+                    <div class="card-body">
+                        <h5 class="card-title">accesorios n°1</h5>
+                        <p class="card-text">Tabla de skate resistente, ideal para trucos y deslizamientos. Diseño ergonómico para un mejor control y diversión en las pistas..</p>
+                        <p class="card-text"><small class="text-body-secondary">Última actualización hace 3 minutos</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 skate-container">
+                <div class="card">
+                    <button class="img-button" data-bs-toggle="modal" data-bs-target="#accesorios9">
+                        <img src="./assets/img/Accesorios/accesorio_9.jpg" class="card-img-top img-thumbnail" alt="...">
+                    </button>
+                    <div class="card-body">
+                        <h5 class="card-title">Tabla Skate n°1</h5>
+                        <p class="card-text">Tabla de skate resistente, ideal para trucos y deslizamientos. Diseño ergonómico para un mejor control y diversión en las pistas..</p>
+                        <p class="card-text"><small class="text-body-secondary">Última actualización hace 3 minutos</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 skate-container">
+                <div class="card">
+                    <button class="img-button" data-bs-toggle="modal" data-bs-target="#accesorios15">
+                        <img src="./assets/img/Accesorios/accesorio_15.jpg" class="card-img-top img-thumbnail" alt="...">
+                    </button>
+                    <div class="card-body">
+                        <h5 class="card-title">Tabla Skate n°1</h5>
+                        <p class="card-text">Tabla de skate resistente, ideal para trucos y deslizamientos. Diseño ergonómico para un mejor control y diversión en las pistas..</p>
+                        <p class="card-text"><small class="text-body-secondary">Última actualización hace 3 minutos</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 skate-container">
+                <div class="card">
+                    <button class="img-button" data-bs-toggle="modal" data-bs-target="#accesorios16">
+                        <img src="./assets/img/Accesorios/accesorio_16.jpg" class="card-img-top img-thumbnail" alt="...">
+                    </button>
+                    <div class="card-body">
+                        <h5 class="card-title">Tabla Skate n°1</h5>
+                        <p class="card-text">Tabla de skate resistente, ideal para trucos y deslizamientos. Diseño ergonómico para un mejor control y diversión en las pistas..</p>
+                        <p class="card-text"><small class="text-body-secondary">Última actualización hace 3 minutos</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 skate-container">
+                <div class="card">
+                    <button class="img-button" data-bs-toggle="modal" data-bs-target="#accesorios22">
+                        <img src="./assets/img/Accesorios/accesorio_22.jpg" class="card-img-top img-thumbnail" alt="...">
+                    </button>
+                    <div class="card-body">
+                        <h5 class="card-title">Tabla Skate n°1</h5>
+                        <p class="card-text">Tabla de skate resistente, ideal para trucos y deslizamientos. Diseño ergonómico para un mejor control y diversión en las pistas..</p>
+                        <p class="card-text"><small class="text-body-secondary">Última actualización hace 3 minutos</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        
+<div class="modal fade" id="accesorios4" tabindex="-1" aria-labelledby="accesorios4Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="accesoriosLabel">Patin número 1</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="./assets/img/Accesorios/accesorio_4.jpg" class="img-fluid" alt="...">
+                <p>Estos patines negros con ruedas azules son una combinación perfecta de estilo y funcionalidad para tus aventuras sobre ruedas. Diseñados para ofrecer comodidad, estabilidad y un aspecto atractivo, estos patines son ideales para patinadores de todos los niveles, desde principiantes hasta avanzados.
+
+                    <ol>COMODIDAD
+                    Para mayor comodidad, los patines cuentan con un forro y una planta extraíbles fabricados con espuma de alta densidad, proporcionando una sensación suave y acolchada para los pies durante el patinaje.</ol>
+                <ol>
+                    CALIDAD DE DESLIZAMIENTO
+                    Equipados con rodamientos ABEC 1, estos patines ofrecen una calidad de deslizamiento ideal para las primeras sensaciones de deslizamiento en patinaje, brindando un equilibrio entre estabilidad y suavidad en el desplazamiento.</ol>
+                
+                <ol>
+                    ADAPTAR
+                    El diseño de los patines incluye un sistema de sujeción del tobillo mediante un armazón de plástico y hebillas de ajuste, garantizando un ajuste seguro y cómodo que se adapta al contorno del pie y proporciona estabilidad durante el patinaje.
+                </ol>
+                <ol>
+                    AJUSTABLE
+                    Con la capacidad de ajustarse en 3 tallas diferentes, estos patines acompañan el crecimiento de los pies del niño, permitiendo una utilización prolongada y garantizando un ajuste óptimo para un patinaje seguro y placentero.</ol></p>
+                <p>Precio: $25.000</p>
+
+                <!--btn de + y - -->
+                <div class="input-group mb-3"> 
+                    <button class="btn btn-outline-secondary" type="button" id="decrease">-</button>
+                    <input type="text" class="form-control text-center" value="1" id="quantity" readonly>
+                    <button class="btn btn-outline-secondary" type="button" id="increase">+</button>
+                </div>
+                <button class="btn btn-primary" id="addToCart">Agregar al carrito</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="accesorios5" tabindex="-1" aria-labelledby="accesorios5Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="patinModalLabel">Patin número 1</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="./assets/img/Accesorios/accesorio_5.webp" class="img-fluid" alt="...">
+                <p>Estos patines negros con ruedas azules son una combinación perfecta de estilo y funcionalidad para tus aventuras sobre ruedas. Diseñados para ofrecer comodidad, estabilidad y un aspecto atractivo, estos patines son ideales para patinadores de todos los niveles, desde principiantes hasta avanzados.
+
+                    <ol>COMODIDAD
+                    Para mayor comodidad, los patines cuentan con un forro y una planta extraíbles fabricados con espuma de alta densidad, proporcionando una sensación suave y acolchada para los pies durante el patinaje.</ol>
+                <ol>
+                    CALIDAD DE DESLIZAMIENTO
+                    Equipados con rodamientos ABEC 1, estos patines ofrecen una calidad de deslizamiento ideal para las primeras sensaciones de deslizamiento en patinaje, brindando un equilibrio entre estabilidad y suavidad en el desplazamiento.</ol>
+                
+                <ol>
+                    ADAPTAR
+                    El diseño de los patines incluye un sistema de sujeción del tobillo mediante un armazón de plástico y hebillas de ajuste, garantizando un ajuste seguro y cómodo que se adapta al contorno del pie y proporciona estabilidad durante el patinaje.
+                </ol>
+                <ol>
+                    AJUSTABLE
+                    Con la capacidad de ajustarse en 3 tallas diferentes, estos patines acompañan el crecimiento de los pies del niño, permitiendo una utilización prolongada y garantizando un ajuste óptimo para un patinaje seguro y placentero.</ol></p>
+                <p>Precio: $25.000</p>
+
+                <!--btn de + y - -->
+                <div class="input-group mb-3"> 
+                    <button class="btn btn-outline-secondary" type="button" id="decrease">-</button>
+                    <input type="text" class="form-control text-center" value="1" id="quantity" readonly>
+                    <button class="btn btn-outline-secondary" type="button" id="increase">+</button>
+                </div>
+                <button class="btn btn-primary" id="addToCart">Agregar al carrito</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="accesorios9" tabindex="-1" aria-labelledby="accesorios9Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="accesorios3Label">Patin número 1</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="./assets/img/Accesorios/accesorio_9.jpg" class="img-fluid" alt="...">
+                <p>Estos patines negros con ruedas azules son una combinación perfecta de estilo y funcionalidad para tus aventuras sobre ruedas. Diseñados para ofrecer comodidad, estabilidad y un aspecto atractivo, estos patines son ideales para patinadores de todos los niveles, desde principiantes hasta avanzados.
+
+                    <ol>COMODIDAD
+                    Para mayor comodidad, los patines cuentan con un forro y una planta extraíbles fabricados con espuma de alta densidad, proporcionando una sensación suave y acolchada para los pies durante el patinaje.</ol>
+                <ol>
+                    CALIDAD DE DESLIZAMIENTO
+                    Equipados con rodamientos ABEC 1, estos patines ofrecen una calidad de deslizamiento ideal para las primeras sensaciones de deslizamiento en patinaje, brindando un equilibrio entre estabilidad y suavidad en el desplazamiento.</ol>
+                
+                <ol>
+                    ADAPTAR
+                    El diseño de los patines incluye un sistema de sujeción del tobillo mediante un armazón de plástico y hebillas de ajuste, garantizando un ajuste seguro y cómodo que se adapta al contorno del pie y proporciona estabilidad durante el patinaje.
+                </ol>
+                <ol>
+                    AJUSTABLE
+                    Con la capacidad de ajustarse en 3 tallas diferentes, estos patines acompañan el crecimiento de los pies del niño, permitiendo una utilización prolongada y garantizando un ajuste óptimo para un patinaje seguro y placentero.</ol></p>
+                <p>Precio: $25.000</p>
+
+                <!--btn de + y - -->
+                <div class="input-group mb-3"> 
+                    <button class="btn btn-outline-secondary" type="button" id="decrease">-</button>
+                    <input type="text" class="form-control text-center" value="1" id="quantity" readonly>
+                    <button class="btn btn-outline-secondary" type="button" id="increase">+</button>
+                </div>
+                <button class="btn btn-primary" id="addToCart">Agregar al carrito</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="accesorios15" tabindex="-1" aria-labelledby="accesorios15Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="accesorios3Label">Patin número 1</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="./assets/img/Accesorios/accesorio_15.jpg" class="img-fluid" alt="...">
+                <p>Estos patines negros con ruedas azules son una combinación perfecta de estilo y funcionalidad para tus aventuras sobre ruedas. Diseñados para ofrecer comodidad, estabilidad y un aspecto atractivo, estos patines son ideales para patinadores de todos los niveles, desde principiantes hasta avanzados.
+
+                    <ol>COMODIDAD
+                    Para mayor comodidad, los patines cuentan con un forro y una planta extraíbles fabricados con espuma de alta densidad, proporcionando una sensación suave y acolchada para los pies durante el patinaje.</ol>
+                <ol>
+                    CALIDAD DE DESLIZAMIENTO
+                    Equipados con rodamientos ABEC 1, estos patines ofrecen una calidad de deslizamiento ideal para las primeras sensaciones de deslizamiento en patinaje, brindando un equilibrio entre estabilidad y suavidad en el desplazamiento.</ol>
+                
+                <ol>
+                    ADAPTAR
+                    El diseño de los patines incluye un sistema de sujeción del tobillo mediante un armazón de plástico y hebillas de ajuste, garantizando un ajuste seguro y cómodo que se adapta al contorno del pie y proporciona estabilidad durante el patinaje.
+                </ol>
+                <ol>
+                    AJUSTABLE
+                    Con la capacidad de ajustarse en 3 tallas diferentes, estos patines acompañan el crecimiento de los pies del niño, permitiendo una utilización prolongada y garantizando un ajuste óptimo para un patinaje seguro y placentero.</ol></p>
+                <p>Precio: $25.000</p>
+
+                <!--btn de + y - -->
+                <div class="input-group mb-3"> 
+                    <button class="btn btn-outline-secondary" type="button" id="decrease">-</button>
+                    <input type="text" class="form-control text-center" value="1" id="quantity" readonly>
+                    <button class="btn btn-outline-secondary" type="button" id="increase">+</button>
+                </div>
+                <button class="btn btn-primary" id="addToCart">Agregar al carrito</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="accesorios16" tabindex="-1" aria-labelledby="accesorios16Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="accesorios5Label">Patin número 1</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="./assets/img/Accesorios/accesorio_16.jpg" class="img-fluid" alt="...">
+                <p>Estos patines negros con ruedas azules son una combinación perfecta de estilo y funcionalidad para tus aventuras sobre ruedas. Diseñados para ofrecer comodidad, estabilidad y un aspecto atractivo, estos patines son ideales para patinadores de todos los niveles, desde principiantes hasta avanzados.
+
+                    <ol>COMODIDAD
+                    Para mayor comodidad, los patines cuentan con un forro y una planta extraíbles fabricados con espuma de alta densidad, proporcionando una sensación suave y acolchada para los pies durante el patinaje.</ol>
+                <ol>
+                    CALIDAD DE DESLIZAMIENTO
+                    Equipados con rodamientos ABEC 1, estos patines ofrecen una calidad de deslizamiento ideal para las primeras sensaciones de deslizamiento en patinaje, brindando un equilibrio entre estabilidad y suavidad en el desplazamiento.</ol>
+                
+                <ol>
+                    ADAPTAR
+                    El diseño de los patines incluye un sistema de sujeción del tobillo mediante un armazón de plástico y hebillas de ajuste, garantizando un ajuste seguro y cómodo que se adapta al contorno del pie y proporciona estabilidad durante el patinaje.
+                </ol>
+                <ol>
+                    AJUSTABLE
+                    Con la capacidad de ajustarse en 3 tallas diferentes, estos patines acompañan el crecimiento de los pies del niño, permitiendo una utilización prolongada y garantizando un ajuste óptimo para un patinaje seguro y placentero.</ol></p>
+                <p>Precio: $25.000</p>
+
+                <!--btn de + y - -->
+                <div class="input-group mb-3"> 
+                    <button class="btn btn-outline-secondary" type="button" id="decrease">-</button>
+                    <input type="text" class="form-control text-center" value="1" id="quantity" readonly>
+                    <button class="btn btn-outline-secondary" type="button" id="increase">+</button>
+                </div>
+                <button class="btn btn-primary" id="addToCart">Agregar al carrito</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="accesorios22" tabindex="-1" aria-labelledby="accesorios22Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="accesorios5Label">Patin número 1</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="./assets/img/Accesorios/accesorio_22.jpg" class="img-fluid" alt="...">
+                <p>Estos patines negros con ruedas azules son una combinación perfecta de estilo y funcionalidad para tus aventuras sobre ruedas. Diseñados para ofrecer comodidad, estabilidad y un aspecto atractivo, estos patines son ideales para patinadores de todos los niveles, desde principiantes hasta avanzados.
+
+                    <ol>COMODIDAD
+                    Para mayor comodidad, los patines cuentan con un forro y una planta extraíbles fabricados con espuma de alta densidad, proporcionando una sensación suave y acolchada para los pies durante el patinaje.</ol>
+                <ol>
+                    CALIDAD DE DESLIZAMIENTO
+                    Equipados con rodamientos ABEC 1, estos patines ofrecen una calidad de deslizamiento ideal para las primeras sensaciones de deslizamiento en patinaje, brindando un equilibrio entre estabilidad y suavidad en el desplazamiento.</ol>
+                
+                <ol>
+                    ADAPTAR
+                    El diseño de los patines incluye un sistema de sujeción del tobillo mediante un armazón de plástico y hebillas de ajuste, garantizando un ajuste seguro y cómodo que se adapta al contorno del pie y proporciona estabilidad durante el patinaje.
+                </ol>
+                <ol>
+                    AJUSTABLE
+                    Con la capacidad de ajustarse en 3 tallas diferentes, estos patines acompañan el crecimiento de los pies del niño, permitiendo una utilización prolongada y garantizando un ajuste óptimo para un patinaje seguro y placentero.</ol></p>
+                <p>Precio: $25.000</p>
+
+                <!--btn de + y - -->
+                <div class="input-group mb-3"> 
+                    <button class="btn btn-outline-secondary" type="button" id="decrease">-</button>
+                    <input type="text" class="form-control text-center" value="1" id="quantity" readonly>
+                    <button class="btn btn-outline-secondary" type="button" id="increase">+</button>
+                </div>
+                <button class="btn btn-primary" id="addToCart">Agregar al carrito</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="./js/popup_logic.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+/* ------------------------------------------------------------------------------------------------------*/
+/*----------------------------HEADER NEGRO + VIÑETAS DEPORTIVAS EN LISTADAS EN HORIZONTAL----------------*/
+/* ------------------------------------------------------------------------------------------------------*/
+
+
+
+
+body {
+    background-color: #f5f5dc; /* Color blanco hueso */
+    color: #000; /* Color negro */
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+header { /* El header es la barra negra, donde entraran los encabezados  */
+    background-color: #333; /* Color de fondo del encabezado */
+    padding: 10px 0; /* Añadir espacio alrededor del menú */
+    text-align: left; /* Alinear el contenido del encabezado a la derecha */
+}
+
+nav ul {
+    list-style-type: none; /* Quitar viñetas de la lista */
+    margin: 0; /* Eliminar márgenes */
+    padding: 0; /* Eliminar relleno */
+    margin-left: 40px; /* Ajuste del lado izquierdo*/
+}
+
+nav ul li {
+    display: inline-block; /* Mostrar elementos en línea y permitir márgenes */
+    margin-left: 50px; /* Espacio entre elementos */
+}
+
+nav ul li:first-child {
+    margin-left: 50px; /* Eliminar margen izquierdo del primer elemento */
+}
+
+nav ul li a {
+    display: block; /* Convertir en elementos de bloque */
+    padding: 10px 20px; /* Espaciado interno */
+    text-decoration: none; /* Quitar subrayado del enlace */
+    color: #fff; /* Color blanco para los enlaces */
+    font-weight: bold; /* Texto en negrita */
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Cambiar color de fondo al pasar el mouse */
+}
+
+/* ------------------------------------------------------------------------------------------------------*/
+/*----------------------------------MENU DESPLEGABLE ----------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------*/
+/* Ocultar el contenido del menú desplegable por defecto */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px; /* Redondear las esquinas */
+}
+
+/* Estilo del enlace dentro del menú desplegable */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Estilo del enlace cuando se pasa el mouse sobre él */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Mostrar el menú desplegable cuando se pasa el mouse sobre el elemento padre */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* ------------------------------------------------------------------------------------------------------*/
+/*----------------------------CONTENEDOR DE BUSQUEDA ----------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------*/
+/* Estilo para el contenedor del buscador */
+.search-container {
+    float: right; /* Para ubicarlo a la derecha */
+    margin-top: 1px; /* Espacio superior */
+    margin-right: 180px; /* Espacio derecho */
+}
+
+/* Estilo para el campo de búsqueda */
+.search-container input[type=text] {
+    width: 200px; /* Ancho del campo de búsqueda */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 20px; /* Redondear las esquinas */
+    border: none; /* Quitar borde */
+}
+
+/* Estilo para el botón de búsqueda */
+.search-container button {
+    padding: 10px; /* Espaciado interno */
+    background: #ccc; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Quitar borde */
+    cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+    border-radius: 20px; /* Redondear las esquinas */
+}
+
+/* Estilo para el botón de búsqueda al pasar el mouse */
+.search-container button:hover {
+    background: #666; /* Cambiar color de fondo al pasar el mouse */
+}
+
+/* ------------------------------------------------------------------------------------------------------*/
+
+/* Estilos para el div principal */
+.contenido_principal {
+    width: 80%; /* Ancho del div */
+    height: 400px; /* Altura del div */
+    margin: 0 auto; /* Centrar horizontalmente */
+    text-align: center; /* Centrar el contenido dentro del div */
+    background-color: #f0f0f0; /* Color de fondo del div */
+    padding: 20px; /* Espaciado interno */
+    margin-top: 20px; /* Espacio superior */
+}
+
+/* ------------------------------------------------------------------------------------------------------*/
+/*----------------------------CONTENEDOR DEL LOGIN ----------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------*/
+
+/* Estilo para el contenedor de login */
+.login-container {
+    float: right;
+    margin-top: 1px;
+    margin-right: 20px;
+}
+
+/* Estilo para el botón de login */
+.login-btn {
+    padding: 10px 20px;
+    background: #ccc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+/* Estilo para el botón de login al pasar el mouse */
+.login-btn:hover {
+    background: #666;
+}
+   
+
+.carousel-img {
+    max-height: 300px; /* Ajusta la altura máxima según tu preferencia */
+}
+
+
+
+
+
+
+
+
+
+
