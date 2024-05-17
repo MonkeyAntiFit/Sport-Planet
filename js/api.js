@@ -10,7 +10,9 @@ function iniciarMap(){
     });
 }
 
-
+/* **************************************************************************/
+/* *****************   EN PROCESO                        ********************/
+/* **************************************************************************/
 function iniciarMapSurf(){
   var coord = {lat:-33.033524,lng:-71.53312};
   var map = new google.maps.Map(document.getElementById('mapSurf'),{
