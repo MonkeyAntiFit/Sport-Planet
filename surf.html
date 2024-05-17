@@ -30,57 +30,7 @@
     </style>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html" target="_self">Sport Planet</a>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                              <a class="nav-link active" aria-current="page" href="./skate.html">Skate</a>
-                            </li>
-                        </ul>
-                        <li class="nav-item dropdown">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                  <a class="nav-link active" aria-current="page" href="./roller.html">Rollers</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                  <a class="nav-link active" aria-current="page" href="./surf.html">Surf</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="accesoriosDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false" data-bs-toggle="popover"
-                                title="Elige tu categoría"
-                                data-bs-content="Encuentra una amplia gama de accesorios para skate, surf y rollers.">Accesorios</a>
-                            <ul class="dropdown-menu" aria-labelledby="accesoriosDropdown">
-                                <li><a class="dropdown-item" href="./accesorioskate.html" target="_self">SKATE 🛹</a></li>
-                                <li><a class="dropdown-item" href="./accesoriosurf.html" target="_self">SURF 🏄</a></li>
-                                <li><a class="dropdown-item" href="./accesorioroller.html" target="_self">PATINES 🛼</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <div class="search-container">
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Buscar</button>
-                        </form>
-                    </div>
-                    <div class="login-btn">
-                        <a type="button" class="btn btn-success " href="./loginNuevo.html">Login</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
-
+    <header id="myHeader"></header>
     <!-- Modal de inicio de sesión -->
     <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -350,6 +300,7 @@
             </div>
         </div>
     </div>
+    <header id="myFooter"></header>
     logica del btn + y -
     <script>
         document.getElementById('increase1').addEventListener('click', function() {
@@ -367,6 +318,8 @@
         });
     </script>
       <!-- Inclusión de la lógica del pop-up -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="./js/header.js"></script>
       <script src="./js/popup_logic.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>

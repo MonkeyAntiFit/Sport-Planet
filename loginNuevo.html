@@ -12,16 +12,16 @@
     <section>
         <div class="contenedor">
             <div class="formulario">
-                <form action="#">
+                <form action="#" name="form" method="post" onsubmit="return validar();">
                     <h2> Iniciar Sesion</h2>
                     <div class="input-contenedor">
                         <i class="fa-solid fa-envelope"></i>
-                        <input type="email" required>
+                        <input type="email" name="correo" required>
                         <label for="#"> Email </label>
                     </div>
                     <div class="input-contenedor">
                         <i class="fa-solid fa-lock"></i>
-                        <input type="contraseña" required>
+                        <input type="password" name="contraseña" required>
                         <label for="#"> Contraseña </label>
                     </div>
                     <div class="olvidar">
@@ -32,7 +32,7 @@
                 </form>
 
                 <div>
-                    <a href="./index.html"><button>Acceder</button></a>
+                    <button onclick="validar();">Acceder</button>
                     <div class="registrar">
                         <p> No tengo cuenta <a href="./registroUser.html"> Crear una </a></p>
                     </div>
@@ -40,5 +40,6 @@
             </div>
         </div>
     </section>
+    <script src="./js/validaLogin.js"></script>
 </body>
 </html>
